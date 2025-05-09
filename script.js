@@ -65,7 +65,8 @@ submit.onclick = () => {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
-    let result += "Ваши заказы: \n"
+    let result = "";
+    result += "Ваши заказы:\n"
     for (let item in items) {
         if (items[item] != 0) {
             result += item + ": " + items[item] + "\n"
