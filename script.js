@@ -1,5 +1,4 @@
 let tg = window.Telegram.WebApp;
-let btn = document.querySelector("#click");
 
 tg.MainButton.textColor = "#FFFFFF"
 tg.MainButton.color = "#FF8979"
@@ -26,6 +25,7 @@ function create_li(text) {
 }
 
 function update_orders() {
+    usercard.innerHTML = ""; // Очищаем список
     for (let item in items) {
         if (items[item] != 0) {
             create_li(item + ": " + items[item])
@@ -65,7 +65,7 @@ submit.onclick = () => {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
-    result += "Ваши заказы: \n"
+    let result += "Ваши заказы: \n"
     for (let item in items) {
         if (items[item] != 0) {
             result += item + ": " + items[item] + "\n"
