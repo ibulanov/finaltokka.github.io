@@ -6,10 +6,10 @@ tg.MainButton.textColor = "#FFFFFF"
 tg.MainButton.color = "#FF8979"
 
 let items = {
-    lazanya: 0,
-    zhylien: 0,
-    karbonara: 0,
-    hachapury: 0
+    лазанья: 0,
+    жульен: 0,
+    карбонара: 0,
+    хачапури: 0
 }
 let price = 0
 let name = ""
