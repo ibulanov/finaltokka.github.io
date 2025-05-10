@@ -63,25 +63,25 @@ userphone.onchange = () => {
 }
 
 btn1.onclick = () => {
-    items['lazanya'] += 1
+    items['лазанья'] += 1
     price += 5
     update_orders()
 }
 
 btn2.onclick = () => {
-    items['zhylien'] += 1
+    items['жульен'] += 1
     price += 3
     update_orders()
 }
 
 btn3.onclick = () => {
-    items['karbonara'] += 1
+    items['карбонара'] += 1
     price += 4
     update_orders()
 }
 
 btn4.onclick = () => {
-    items['hachapury'] += 1
+    items['хачапури'] += 1
     price += 6
     update_orders()
 }
