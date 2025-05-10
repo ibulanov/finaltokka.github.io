@@ -94,7 +94,7 @@ submit.onclick = () => {
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
-    result = ""
+    let result = ""
     if (name != "") {
         result += "Ваше имя: " + name + "\n"
     }
